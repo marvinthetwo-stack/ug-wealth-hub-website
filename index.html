@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UG Wealth Hub - financial education and account dashboard demo.">
+  <title>UG Wealth Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">UG <span>Wealth Hub</span></a>
+  <button class="menu" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#plans">Plans</a>
+    <a href="#rules">Rules</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">UGANDA • UG WEALTH HUB</p>
+    <h1>Build better money habits with <span>UG Wealth Hub.</span></h1>
+    <p class="lead">A simple, mobile-friendly platform for viewing plans, tracking account information and staying connected with the UG Wealth Hub community.</p>
+    <div class="actions">
+      <a class="btn primary" href="#plans">View Plans</a>
+      <a class="btn light" href="#community">Join WhatsApp</a>
+    </div>
+    <p class="disclaimer">This website is a front-end/demo platform. No payment is collected through this version and returns are not guaranteed.</p>
+  </div>
+</section>
+
+<section class="bonus">
+  <div>
+    <p class="eyebrow">🎁 WELCOME BONUS</p>
+    <h2>UGX 5,000</h2>
+    <p>Eligible new users may qualify. Bonus terms and eligibility apply.</p>
+  </div>
+  <a class="btn primary" href="#rules">View Terms</a>
+</section>
+
+<section id="plans" class="section">
+  <div class="heading">
+    <p class="eyebrow">PLANS</p>
+    <h2>Starting amounts</h2>
+    <p>These are displayed as example amounts. They are not promises of profit or guaranteed returns.</p>
+  </div>
+  <div id="planGrid" class="grid"></div>
+</section>
+
+<section id="rules" class="section soft">
+  <div class="heading">
+    <p class="eyebrow">BONUS & WITHDRAWAL</p>
+    <h2>Important rules</h2>
+    <p>Read the conditions before using the platform.</p>
+  </div>
+  <div class="rules">
+    <article><div class="icon">🎁</div><h3>Welcome Bonus</h3><strong>UGX 5,000</strong><p>Eligible new users may qualify. Eligibility and any applicable terms must be satisfied.</p></article>
+    <article><div class="icon">💰</div><h3>Minimum Withdrawal</h3><strong>UGX 8,000</strong><p>The minimum withdrawal request amount shown by this platform is UGX 8,000.</p></article>
+    <article><div class="icon">⏱️</div><h3>Processing</h3><strong>Up to 24 hours</strong><p>Requests may take up to 24 hours to be reviewed and processed.</p></article>
+    <article><div class="icon">📋</div><h3>Review</h3><strong>Verification required</strong><p>Withdrawal requests are reviewed before processing. Any fees or conditions should be shown before submission.</p></article>
+  </div>
+</section>
+
+<section id="dashboard" class="section">
+  <div class="heading">
+    <p class="eyebrow">USER DASHBOARD</p>
+    <h2>Your account</h2>
+    <p>This is currently a demo interface. Secure login and database features will be connected separately.</p>
+  </div>
+  <div class="dashboard">
+    <div class="stat"><small>Account balance</small><b>UGX 0</b><span>Demo display</span></div>
+    <div class="stat"><small>Selected plan</small><b id="selectedPlan">None</b><span>Choose a plan above</span></div>
+    <div class="stat"><small>Withdrawal minimum</small><b>UGX 8,000</b><span>Minimum request</span></div>
+  </div>
+  <div class="notice"><b>Admin:</b> The private admin dashboard and database should be protected by server-side authentication. Never place admin passwords or secret keys in public website files.</div>
+</section>
+
+<section id="community" class="community section">
+  <div>
+    <p class="eyebrow">COMMUNITY</p>
+    <h2>Join our WhatsApp Group</h2>
+    <p>Get announcements and community updates through the UG Wealth Hub WhatsApp group.</p>
+  </div>
+  <a class="btn primary" href="https://chat.whatsapp.com/EYi35BOO7uY9sZUq1m350G?s=cl&p=a&ilr=0" target="_blank" rel="noopener">Join WhatsApp</a>
+</section>
+
+<section id="support" class="section">
+  <div class="heading">
+    <p class="eyebrow">SUPPORT</p>
+    <h2>Need help?</h2>
+    <p>Use the official support contact you choose for the platform. Do not request passwords, verification codes or private credentials from users.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>UG <span>Wealth Hub</span></strong>
+  <p>© 2026 UG Wealth Hub. Educational/demo website.</p>
+</footer>
+
+<div id="toast" class="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
